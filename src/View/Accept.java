@@ -1,7 +1,7 @@
 /*
  * Jogo desenvolvido como avaliação técnica para a empresa Objective.
  */
-package Vision;
+package View;
 
 /**
  *

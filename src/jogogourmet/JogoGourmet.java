@@ -5,7 +5,7 @@ package jogogourmet;
 
 import Model.Node;
 import Model.Tree;
-import Vision.Initial;
+import View.Initial;
 
 /**
  *

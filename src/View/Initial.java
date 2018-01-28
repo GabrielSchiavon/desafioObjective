@@ -1,10 +1,9 @@
 /*
  * Jogo desenvolvido como avaliação técnica para a empresa Objective.
  */
-package Vision;
+package View;
 
 import Model.Tree;
-import javax.security.auth.callback.ConfirmationCallback;
 
 /**
  *

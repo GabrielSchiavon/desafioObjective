@@ -1,7 +1,7 @@
 /*
  * Jogo desenvolvido como avaliação técnica para a empresa Objective.
  */
-package Vision;
+package View;
 
 import Model.Node;
 
@@ -99,12 +99,7 @@ public class Complet extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonOkActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
-        String text = jTextField1.getText();
-        if (text.equals("")) {
-            text = "null";
-        }
-        
-        node.setNodeLeft(new Node(text));
+        node.setNodeLeft(new Node("null"));
         dispose();
     }//GEN-LAST:event_jButtonCancelActionPerformed
 

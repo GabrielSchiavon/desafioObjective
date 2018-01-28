@@ -1,7 +1,7 @@
 /*
  * Jogo desenvolvido como avaliação técnica para a empresa Objective.
  */
-package Vision;
+package View;
 
 import Model.Node;
 
@@ -38,7 +38,9 @@ public class Confirm extends javax.swing.JFrame {
         jButtonYes = new javax.swing.JButton();
         jButtonNo = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Confirm");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(373, 115));
 
         jLabel1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
@@ -99,7 +101,7 @@ public class Confirm extends javax.swing.JFrame {
         }
         dispose();
     }//GEN-LAST:event_jButtonYesActionPerformed
-
+    
     private void jButtonNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNoActionPerformed
         if (node.getNodeRight() == null) {
             Desist desistView = new Desist(node);

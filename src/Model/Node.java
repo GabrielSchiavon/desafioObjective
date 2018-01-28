@@ -2,7 +2,7 @@ package Model;
 
 /**
  *
- * @author gabriel schiavon
+ * @author Gabriel Schiavon
  */
 public class Node {
     private String value;
