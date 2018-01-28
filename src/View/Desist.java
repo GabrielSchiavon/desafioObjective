@@ -104,25 +104,26 @@ public class Desist extends javax.swing.JFrame {
     }
     
     private void jButtonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOkActionPerformed
-        String typeFood = jTextField1.getText();
+        String foodaName = jTextField1.getText();
         Node clonedNode = cloneNode();
         
-        node.setValue(typeFood);
+        //node.setValue(foodaName);
         node.setNodeRight(clonedNode);
         
-        Complet completView = new Complet(node, clonedNode);
+        Complet completView = new Complet(node, foodaName, clonedNode);
         completView.setVisible(true);
         
         dispose();
     }//GEN-LAST:event_jButtonOkActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
+        String foodName = "null";
         Node clonedNode = cloneNode();
         
-        node.setValue("null");
+        node.setValue(foodName);
         node.setNodeRight(clonedNode);
         
-        Complet completView = new Complet(node, clonedNode);
+        Complet completView = new Complet(node, foodName, clonedNode);
         completView.setVisible(true);
         
         dispose();

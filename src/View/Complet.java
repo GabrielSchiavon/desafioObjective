@@ -11,6 +11,7 @@ import Model.Node;
  */
 public class Complet extends javax.swing.JFrame {
     private Node node;
+    private String foodName;
     /**
      * Creates new form Complet
      */
@@ -18,10 +19,12 @@ public class Complet extends javax.swing.JFrame {
         initComponents();
     }
     
-    public Complet(Node currentNode, Node clonedNode) {
+    public Complet(Node currentNode, String foodName, Node clonedNode) {
         initComponents();
         this.node = currentNode;
-        jLabel1.setText(this.node.getValue() + " é _______ mas " + clonedNode.getValue() + " não.");
+        this.foodName = foodName;
+        
+        jLabel1.setText(foodName + " é _______ mas " + clonedNode.getValue() + " não.");
     }
 
     /**
@@ -94,12 +97,14 @@ public class Complet extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOkActionPerformed
-        node.setNodeLeft(new Node(jTextField1.getText()));
+        node.setValue(jTextField1.getText());
+        node.setNodeLeft(new Node(foodName));
         dispose();
     }//GEN-LAST:event_jButtonOkActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
-        node.setNodeLeft(new Node("null"));
+        node.setValue("null");
+        node.setNodeLeft(new Node(foodName));
         dispose();
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
